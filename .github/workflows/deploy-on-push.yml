@@ -1,6 +1,9 @@
-name: deploy on push
+name: deploy on push development branch
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy-app:
